@@ -1602,6 +1602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4893610132966776}
   - component: {fileID: 65642792687513846}
+  - component: {fileID: 114117649014547152}
   m_Layer: 9
   m_Name: Pine Tree
   m_TagString: Untagged
@@ -5681,6 +5682,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreAmount: 100
+--- !u!114 &114117649014547152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1889510780268516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c277090535e17a1429f0d6b43a871f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114133865151031856
 MonoBehaviour:
   m_ObjectHideFlags: 1

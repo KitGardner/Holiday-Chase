@@ -475,7 +475,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 39
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -567,6 +567,7 @@ MonoBehaviour:
   presentPickUpSFX: {fileID: 8300000, guid: 9d188677f5eb9504ab99cc7e4006852d, type: 3}
   buttonSFX: {fileID: 8300000, guid: b7ef92a345f51c94281a09fe145442c8, type: 3}
   Audio: {fileID: 0}
+  treeHitSFX: {fileID: 8300000, guid: 43892e4f47c64654dba706ec93db7872, type: 3}
 --- !u!1 &397233436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &810250765
 Transform:
   m_ObjectHideFlags: 0
@@ -1346,7 +1347,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114117649014547152, guid: ce41d41656fc7d34da9d762cac9b3609, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ce41d41656fc7d34da9d762cac9b3609, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &934850665
@@ -1815,6 +1817,7 @@ GameObject:
   - component: {fileID: 1261094199}
   - component: {fileID: 1261094202}
   - component: {fileID: 1261094203}
+  - component: {fileID: 1261094198}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1822,6 +1825,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1261094198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1261094197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c277090535e17a1429f0d6b43a871f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &1261094199
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2994,6 +3008,11 @@ Prefab:
       propertyPath: randomSeed
       value: 394856726
       objectReference: {fileID: 0}
+    - target: {fileID: 199073602247951022, guid: 944f50784bd0e2c439acdb1612cb8b6f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 54596133e708002419dce4698eec6cc7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 944f50784bd0e2c439acdb1612cb8b6f, type: 2}
   m_IsPrefabParent: 0
