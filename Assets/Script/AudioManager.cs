@@ -14,7 +14,9 @@ public class AudioManager : MonoBehaviour
     AudioClip buttonSFX;
     [SerializeField]
     AudioSource Audio;
-
+    [SerializeField]
+    AudioClip treeHitSFX;
+    
     public static AudioManager audInstance;
 
 
@@ -46,6 +48,12 @@ public class AudioManager : MonoBehaviour
     public void PlayClickSound()
     {
         Audio.clip = buttonSFX;
+        Audio.Play();
+    }
+
+    public void PlayTreeHitSound()
+    {
+        Audio.clip = treeHitSFX;
         Audio.Play();
     }
 	
