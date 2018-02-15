@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 83ba3fef1fa70e4429cb9dc9fcf97aa4
+timeCreated: 1518612075
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: BUBBLEGUM BABY s
+  fontNames:
+  - BUBBLEGUM BABY s
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 684dcf2140baafa418a6197af673774a
+timeCreated: 1518612075
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: bubble & soap
+  fontNames:
+  - bubble & soap
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
