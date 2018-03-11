@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     float movementForce;
     [SerializeField]
     float sideMovementForce;
+    [SerializeField]
+    float impactMagnitude;
 
     private Vector3 direction;
 
@@ -28,5 +30,13 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector3(vertical * movementForce, -movementForce, -horizontal * sideMovementForce);
 
         rb.AddForce(direction);
+    }
+
+    public void OnCollisionEnter(Collision col)
+    {
+        if (col.collider.name.Contains("Rock"))
+        {
+            rb.AddForce(-direction * impactMagnitude);
+        }
     }
 }

@@ -103,4 +103,17 @@ public class ScoreKeeper : MonoBehaviour
         popUp.GetComponent<PopUpTextBehavior>().InitializeText(scoreVal, pos, scoreTXTPos);
     }
 
+    public void Retry()
+    {
+        if (LevelManager.instance != null)
+        {
+            LevelManager.instance.LoadLevel("Game Scene");
+        }
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 }

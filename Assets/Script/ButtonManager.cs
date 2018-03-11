@@ -46,6 +46,11 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+    public void CreditsButton(string creditsLevel)
+    {
+        StartCoroutine(LoadAsynchronously(creditsLevel));
+    }
+
     // Ends game application when quit button is pressed. 
     public void ExitGameBtn()                                     
     {
